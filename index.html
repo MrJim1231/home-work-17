@@ -20,7 +20,36 @@
 
 <body>
 
-  <h1>hello</h1>
+  <header class="header">
+    <div class="header__menu">
+      <!-- делаем контейнер для меню -->
+      <div class="header__menu-container">
+        <div class="header__logo">
+          <a class="header__logo-link" href="#">SITE<span class="header__logo-accent">LOGO</span></a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a class="header__link" href="#">Home</a></li>
+            <li class="header__item"><a class="header__link" href="#">About</a></li>
+            <li class="header__item"><a class="header__link" href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="header__content">
+      <!-- делаем контейнер для контента шапки -->
+      <div class="header__content-container">
+        <h1 class="header__content-title">WE ARE REAL WEB-DEVELOPERS</h1>
+        <div class="header__content-buttons">
+          <a href="#" class="header__btn btn--light">Learn more</a>
+          <a href="#" class="header__btn btn--light">Get started</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__overlay"></div>
+  </header>
 
   <!-- Подключаем библиотеку jquery, необходимую для работы нашего основного скрипта -->
   <script src="assets/vendors/jquery/jquery.min.js"></script>
