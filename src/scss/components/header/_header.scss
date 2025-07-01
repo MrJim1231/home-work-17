@@ -1,1 +1,8 @@
 @use "../../abstracts" as *;
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  color: $color-white;
+  background-color: $color-primary;
+}

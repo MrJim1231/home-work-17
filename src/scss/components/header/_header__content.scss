@@ -1,1 +1,7 @@
 @use "../../abstracts" as *;
+
+.header__content {
+  &-title {
+    margin: 0;
+  }
+}
