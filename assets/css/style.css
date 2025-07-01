@@ -184,6 +184,11 @@ h2{
   color:#2d3651;
 }
 
+a{
+  color:#ffffff;
+  text-decoration:none;
+}
+
 .header{
   position:relative;
   min-height:100vh;
@@ -191,6 +196,13 @@ h2{
   background-color:#2d3651;
 }
 
+.header__content{
+  background-color:blue;
+}
 .header__content-title{
   margin:0;
+}
+
+.header__menu{
+  background-color:red;
 }

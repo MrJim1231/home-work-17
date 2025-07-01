@@ -1,6 +1,7 @@
 @use "../../abstracts" as *;
 
 .header__content {
+  background-color: blue;
   &-title {
     margin: 0;
   }
