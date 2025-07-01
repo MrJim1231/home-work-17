@@ -20,20 +20,16 @@
     }
   }
 
-  &__content {
-    position: relative;
-    z-index: 1;
-    flex: 1;
-    display: flex;
-    align-items: center;
+  &__logo {
+    // пока пусто
+  }
 
-    &-container {
-      @extend %container;
-    }
+  &__logo-link {
+    // пока пусто
+  }
 
-    &-title {
-      margin: 0;
-    }
+  &__logo-accent {
+    // пока пусто
   }
 
   &__nav {
@@ -47,7 +43,32 @@
     }
   }
 
-  .header__overlay {
+  &__content {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    &-container {
+      @extend %container;
+    }
+
+    &-title {
+      margin: 0 0 47px 0;
+      text-align: center;
+    }
+
+    &-buttons {
+      // пока пусто
+    }
+  }
+
+  &__btn {
+    // пока пусто
+  }
+
+  &__overlay {
     background-color: rgba($color-primary, 0.8);
     position: absolute;
     top: 0;
