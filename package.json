@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build"
+     "build": "gulp default"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",

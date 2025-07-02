@@ -217,6 +217,10 @@
     &-title {
       margin: 0 0 53px 0;
       text-align: center;
+
+      @include md {
+        margin: 0 0 33px 0;
+      }
     }
 
     &-actions {
