@@ -35,16 +35,17 @@
 
   &__logo-accent {
     display: inline-block;
-    padding: 15px;
+    padding: 14px 1px 12px 5px;
+    margin-right: 4px;
     border: solid 3px $color-highlight;
-    margin-right: 7px;
   }
 
   &__nav {
     margin-left: auto;
     &-list {
-      @include unlist;
+      @include unlist(0 (-$gap-sm) 0 0);
       display: flex;
+      gap: $gap;
     }
 
     &-item {
@@ -70,13 +71,14 @@
     flex: 1;
     display: flex;
     align-items: center;
+    margin-top: -$gap-x5; // Поднимаем блок вверх
 
     &-container {
       @extend %container;
     }
 
     &-title {
-      margin: 0 0 47px 0;
+      margin: 0 0 53px 0;
       text-align: center;
     }
 
