@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#nav-icon2').click(function(){
+	$('.header__nav-btn').click(function(){
 		$(this).toggleClass('open');
 	});
 });
