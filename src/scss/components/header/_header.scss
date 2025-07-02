@@ -152,16 +152,26 @@
         @include unlist(0 (-$gap-sm) 0 0);
       }
       @include md {
-        @include unlist;
         display: none;
-      }
-      &.active {
-        display: block;
-        background-color: rgba($color-gray-dark, 0.95);
+        overflow: hidden;
         position: absolute;
+        text-align: right;
         top: 100%;
         right: $gap;
+        @include unlist;
         @include box-shadow;
+
+        &::before {
+          position: absolute;
+          z-index: -1;
+          top: -$gap;
+          right: -$gap;
+          bottom: -$gap;
+          left: -$gap;
+          content: "";
+          background-color: rgba($color-gray-dark, 0.25);
+          backdrop-filter: blur(5px);
+        }
       }
     }
 
