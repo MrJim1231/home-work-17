@@ -17,6 +17,8 @@
 
     &-container {
       @extend %container;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -25,21 +27,36 @@
   }
 
   &__logo-link {
-    // пока пусто
+    display: block;
+    letter-spacing: 0.22em;
+    font-size: 1.5rem;
   }
 
   &__logo-accent {
-    // пока пусто
+    padding: 15px;
   }
 
   &__nav {
+    margin-left: auto;
     &-list {
+      @include unlist;
+      display: flex;
     }
 
     &-item {
     }
 
     &-link {
+      display: block;
+      padding: $gap $gap-sm;
+      letter-spacing: 0.09em;
+      font-size: 18px;
+      transition: color 0.3s;
+
+      &:hover,
+      &:focus {
+        color: $color-accent;
+      }
     }
   }
 
@@ -90,11 +107,6 @@
 
   &__overlay {
     background-color: rgba($color-primary, 0.8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
+    @include abs-position;
   }
 }
