@@ -14,6 +14,7 @@
   &__menu {
     position: relative;
     z-index: 2;
+    padding: $gap 0;
 
     &-container {
       @extend %container;
@@ -33,7 +34,10 @@
   }
 
   &__logo-accent {
+    display: inline-block;
     padding: 15px;
+    border: solid 3px $color-highlight;
+    margin-right: 7px;
   }
 
   &__nav {
