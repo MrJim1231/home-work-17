@@ -35,7 +35,7 @@
 
   &__logo-accent {
     display: inline-block;
-    padding: 14px 1px 12px 5px;
+    padding: 14px 1px 13px 5px;
     margin-right: 4px;
     border: solid 3px $color-highlight;
   }
@@ -43,9 +43,12 @@
   &__nav {
     margin-left: auto;
     &-list {
-      @include unlist(0 (-$gap-sm) 0 0);
       display: flex;
       gap: $gap;
+      @include unlist(0 (-$gap-sm) 0 0);
+      @include md {
+        display: none;
+      }
     }
 
     &-item {
@@ -108,6 +111,12 @@
     &:hover,
     &:focus {
       background-color: $color-accent;
+    }
+
+    &--light {
+    }
+
+    &--primary {
     }
   }
 
