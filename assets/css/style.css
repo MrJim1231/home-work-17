@@ -367,6 +367,13 @@ a{
   padding:0;
   list-style:none;
 }
+.header__nav-list.active{
+  display:block;
+  background-color:red;
+  position:absolute;
+  top:100%;
+  right:20px;
+}
 .header__nav-link{
   display:block;
   padding:20px 10px;
@@ -602,6 +609,11 @@ a{
   .btn--light{
     min-width:170px;
     min-height:40px;
+  }
+  .header__menu{
+    background-color:rgba(68, 89, 110, 0.25);
+    -webkit-box-shadow:-3px 3px 20px -10px #000000;
+            box-shadow:-3px 3px 20px -10px #000000;
   }
   .header__nav-list{
     display:none;
