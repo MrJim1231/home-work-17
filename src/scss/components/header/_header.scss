@@ -147,28 +147,43 @@
     &-list {
       display: flex;
       gap: $gap;
-      @include unlist(0 (-$gap-sm) 0 0);
+
+      @include md-min {
+        @include unlist(0 (-$gap-sm) 0 0);
+      }
       @include md {
+        @include unlist;
         display: none;
       }
       &.active {
         display: block;
-        background-color: red;
+        background-color: rgba($color-gray-dark, 0.95);
         position: absolute;
         top: 100%;
         right: $gap;
+        @include box-shadow;
       }
     }
 
     &-item {
+      @include md {
+        margin: $gap;
+      }
     }
 
     &-link {
       display: block;
-      padding: $gap $gap-sm;
       letter-spacing: 0.09em;
-      font-size: 18px;
+      font-size: 1.125rem;
       transition: color 0.3s;
+
+      @include md-min {
+        padding: $gap $gap-sm;
+      }
+
+      @include md {
+        padding: $gap-sm $gap;
+      }
 
       &:hover,
       &:focus {
