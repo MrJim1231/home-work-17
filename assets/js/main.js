@@ -1,4 +1,5 @@
-$('.header__navbar-btn').on('click', function () {
-  $(this).toggleClass('active')
-  $('.header__navbar-list').stop(true, true).slideToggle(300)
-})
+$(document).ready(function(){
+	$('#nav-icon2').click(function(){
+		$(this).toggleClass('open');
+	});
+});
