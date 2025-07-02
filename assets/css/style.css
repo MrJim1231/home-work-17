@@ -193,6 +193,37 @@ a{
   text-decoration:none;
 }
 
+.btn{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  padding:0.5em 1em;
+  -webkit-transition:background-color 0.3s;
+  transition:background-color 0.3s;
+  letter-spacing:0.1em;
+  border-width:2px;
+  border-style:solid;
+}
+.btn:hover, .btn:focus{
+  background-color:#d66926;
+}
+.btn--light{
+  border-color:#ffffff;
+  background-color:rgba(255, 255, 255, 0.1);
+}
+.btn--primary{
+  min-height:60px;
+  border-color:#2d3651;
+  background-color:rgba(45, 54, 81, 0.8);
+  font-size:1.125rem;
+}
+
 .visually-hidden{
   position:absolute;
   overflow:hidden;
@@ -202,13 +233,6 @@ a{
   margin:-1px;
   padding:0;
   border:0;
-}
-
-.btn--primary{
-  min-height:60px;
-  border-color:#2d3651;
-  background-color:rgba(45, 54, 81, 0.8);
-  font-size:1.125rem;
 }
 
 .header{
@@ -300,33 +324,6 @@ a{
       -ms-flex-pack:center;
           justify-content:center;
   gap:20px;
-}
-.header__btn{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-align:center;
-      -ms-flex-align:center;
-          align-items:center;
-  -webkit-box-pack:center;
-      -ms-flex-pack:center;
-          justify-content:center;
-  border-style:solid;
-  border-width:2px;
-  letter-spacing:0.1em;
-  padding:0.5em 1em;
-  -webkit-transition:background-color 0.3s;
-  transition:background-color 0.3s;
-}
-.header__btn:hover, .header__btn:focus{
-  background-color:#d66926;
-}
-.header__btn--light{
-  border-color:#ffffff;
-  background-color:rgba(255, 255, 255, 0.1);
-}
-.header__btn--primary{
-  font-size:1.125rem;
 }
 .header__overlay{
   background-color:rgba(45, 54, 81, 0.8);
@@ -484,7 +481,7 @@ a{
   h1{
     font-size:2.5rem;
   }
-  .header__btn--light{
+  .btn--light{
     min-width:200px;
     min-height:50px;
   }
@@ -504,7 +501,7 @@ a{
   h1{
     font-size:3.75rem;
   }
-  .header__btn--light{
+  .btn--light{
     min-width:250px;
     min-height:60px;
     font-size:1.125rem;
@@ -519,12 +516,12 @@ a{
   h1{
     font-size:1.875rem;
   }
-  .header__nav-list{
-    display:none;
-  }
-  .header__btn--light{
+  .btn--light{
     min-width:170px;
     min-height:40px;
+  }
+  .header__nav-list{
+    display:none;
   }
   .skills__item-title{
     font-size:1.125rem;

@@ -96,45 +96,6 @@
     }
   }
 
-  &__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-style: solid;
-    border-width: 2px;
-    letter-spacing: 0.1em;
-    padding: 0.5em 1em;
-    transition: background-color 0.3s;
-
-    &:hover,
-    &:focus {
-      background-color: $color-accent;
-    }
-
-    &--light {
-      border-color: $color-white;
-      background-color: rgba($color-white, 0.1);
-      @include lg-min {
-        min-width: 250px;
-        min-height: 60px;
-        font-size: 1.125rem;
-      }
-      @include lg-md {
-        min-width: 200px;
-        min-height: 50px;
-      }
-      @include md {
-        min-width: 170px;
-        min-height: 40px;
-      }
-    }
-
-    &--primary {
-      font-size: 1.125rem;
-    }
-  }
-
   &__overlay {
     background-color: rgba($color-primary, 0.8);
     @include abs-position;
