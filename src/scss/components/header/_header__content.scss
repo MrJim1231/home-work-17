@@ -22,6 +22,9 @@
     @include md {
       margin: 0 0 33px 0;
     }
+    @include sm {
+      margin: 0px 0 41px 0;
+    }
   }
 
   &-actions {
@@ -30,8 +33,8 @@
     gap: $gap;
 
     @include sm {
-      align-items: center;
-      flex-direction: column;
+      // align-items: center;
+      // flex-direction: column;
     }
   }
 }

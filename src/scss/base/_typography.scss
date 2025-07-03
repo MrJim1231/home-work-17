@@ -33,6 +33,13 @@ h1 {
   @include md {
     font-size: 1.875rem;
   }
+  span {
+    display: inline;
+
+    @include sm {
+      display: block; // перенос на новую строку
+    }
+  }
 }
 
 h2 {

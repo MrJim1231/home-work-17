@@ -180,6 +180,9 @@ h1{
   font-weight:300;
   line-height:1.2;
 }
+h1 span{
+  display:inline;
+}
 
 h2{
   font-family:"Roboto Slab", serif;
@@ -283,7 +286,6 @@ a{
           justify-content:center;
   gap:20px;
 }
-
 .header__menu{
   position:relative;
   z-index:2;
@@ -675,6 +677,9 @@ a{
   .header__nav-link{
     padding:10px 20px;
   }
+  .skills__container{
+    grid-auto-rows:336.6666666667px;
+  }
   .skills__item-title{
     font-size:1.125rem;
   }
@@ -687,23 +692,21 @@ a{
 }
 
 @media (width < 576px){
+  h1 span{
+    display:block;
+  }
   .btn--primary{
     width:100%;
   }
-  .header__content-actions{
-    -webkit-box-align:center;
-        -ms-flex-align:center;
-            align-items:center;
-    -webkit-box-orient:vertical;
-    -webkit-box-direction:normal;
-        -ms-flex-direction:column;
-            flex-direction:column;
+  .header__content-title{
+    margin:0px 0 41px 0;
   }
   .skills{
     padding:20px;
   }
   .skills__container{
     gap:20px;
+    grid-auto-rows:349.6666666667px;
     grid-template-areas:"a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
   }
 }
