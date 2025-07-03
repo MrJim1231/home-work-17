@@ -576,9 +576,19 @@ a{
     display:none;
   }
   .header__nav-list{
+    display:-webkit-box !important;
+    display:-ms-flexbox !important;
+    display:flex !important;
     margin:0 -10px 0 0;
     padding:0;
     list-style:none;
+    position:static;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:row;
+            flex-direction:row;
+    padding:0;
+    background:none;
   }
   .header__nav-link{
     padding:20px 10px;
@@ -617,32 +627,30 @@ a{
             box-shadow:-3px 3px 20px -10px #000000;
   }
   .header__nav-list{
+    margin:0;
+    padding:0;
+    list-style:none;
     display:none;
-    overflow:hidden;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
     position:absolute;
     text-align:right;
     top:100%;
     right:20px;
-    margin:0;
-    padding:0;
-    list-style:none;
-    -webkit-box-shadow:-3px 3px 20px -10px #000000;
-            box-shadow:-3px 3px 20px -10px #000000;
-  }
-  .header__nav-list::before{
-    position:absolute;
-    z-index:-1;
-    top:-20px;
-    right:-20px;
-    bottom:-20px;
-    left:-20px;
-    content:"";
     background-color:rgba(68, 89, 110, 0.25);
     -webkit-backdrop-filter:blur(5px);
             backdrop-filter:blur(5px);
+    padding:20px;
+    border-radius:4px;
+    z-index:10;
+  }
+  .header__nav-list::before{
+    display:none;
   }
   .header__nav-item{
-    margin:20px;
+    margin:20px 0;
   }
   .header__nav-link{
     padding:10px 20px;

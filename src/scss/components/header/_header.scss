@@ -15,6 +15,7 @@
     position: relative;
     z-index: 2;
     padding: $gap 0;
+
     @include md {
       background-color: rgba($color-gray-dark, 0.25);
       @include box-shadow;
@@ -57,6 +58,7 @@
       transform: rotate(0deg);
       transition: 0.5s ease-in-out;
       cursor: pointer;
+
       @include md-min {
         display: none;
       }
@@ -149,35 +151,37 @@
       gap: $gap;
 
       @include md-min {
+        display: flex !important; // решает проблему после slideToggle()
         @include unlist(0 (-$gap-sm) 0 0);
+        position: static;
+        flex-direction: row;
+        padding: 0;
+        background: none;
       }
+
       @include md {
+        @include unlist;
         display: none;
-        overflow: hidden;
+        flex-direction: column;
         position: absolute;
         text-align: right;
         top: 100%;
         right: $gap;
-        @include unlist;
-        @include box-shadow;
+        background-color: rgba($color-gray-dark, 0.25);
+        backdrop-filter: blur(5px);
+        padding: $gap;
+        border-radius: 4px;
+        z-index: 10;
 
         &::before {
-          position: absolute;
-          z-index: -1;
-          top: -$gap;
-          right: -$gap;
-          bottom: -$gap;
-          left: -$gap;
-          content: "";
-          background-color: rgba($color-gray-dark, 0.25);
-          backdrop-filter: blur(5px);
+          display: none;
         }
       }
     }
 
     &-item {
       @include md {
-        margin: $gap;
+        margin: $gap 0;
       }
     }
 
@@ -208,7 +212,7 @@
     flex: 1;
     display: flex;
     align-items: center;
-    margin-top: -$gap-x5; // Поднимаем блок вверх
+    margin-top: -$gap-x5;
 
     &-container {
       @extend %container;
@@ -227,6 +231,7 @@
       display: flex;
       justify-content: center;
       gap: $gap;
+
       @include sm {
         align-items: center;
         flex-direction: column;
