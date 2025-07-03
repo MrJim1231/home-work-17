@@ -255,6 +255,35 @@ a{
   background-position:center;
   background-size:cover;
 }
+
+.header__content{
+  position:relative;
+  z-index:1;
+  -webkit-box-flex:1;
+      -ms-flex:1;
+          flex:1;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  margin-top:-100px;
+}
+.header__content-title{
+  margin:0 0 53px 0;
+  text-align:center;
+}
+.header__content-actions{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  gap:20px;
+}
+
 .header__menu{
   position:relative;
   z-index:2;
@@ -268,17 +297,20 @@ a{
       -ms-flex-align:center;
           align-items:center;
 }
+
 .header__logo-link{
   display:block;
   letter-spacing:0.22em;
   font-size:1.5rem;
 }
+
 .header__logo-accent{
   display:inline-block;
   padding:14px 1px 13px 5px;
   margin-right:4px;
   border:solid 3px #d53d27;
 }
+
 .header__nav{
   margin-left:auto;
 }
@@ -378,33 +410,7 @@ a{
 .header__nav-link:hover, .header__nav-link:focus{
   color:#d66926;
 }
-.header__content{
-  position:relative;
-  z-index:1;
-  -webkit-box-flex:1;
-      -ms-flex:1;
-          flex:1;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-align:center;
-      -ms-flex-align:center;
-          align-items:center;
-  margin-top:-100px;
-}
-.header__content-title{
-  margin:0 0 53px 0;
-  text-align:center;
-}
-.header__content-actions{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-pack:center;
-      -ms-flex-pack:center;
-          justify-content:center;
-  gap:20px;
-}
+
 .header__overlay{
   background-color:rgba(45, 54, 81, 0.8);
   position:absolute;
@@ -621,6 +627,9 @@ a{
     min-width:170px;
     min-height:40px;
   }
+  .header__content-title{
+    margin:0 0 33px 0;
+  }
   .header__menu{
     background-color:rgba(68, 89, 110, 0.25);
     -webkit-box-shadow:-3px 3px 20px -10px #000000;
@@ -654,9 +663,6 @@ a{
   }
   .header__nav-link{
     padding:10px 20px;
-  }
-  .header__content-title{
-    margin:0 0 33px 0;
   }
   .skills__item-title{
     font-size:1.125rem;
