@@ -15,6 +15,9 @@
   &-title {
     margin: 0 0 53px 0;
     text-align: center;
+    @include lg {
+      margin: 0px 0 41px 0;
+    }
 
     @include md {
       margin: 0 0 33px 0;

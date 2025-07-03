@@ -619,6 +619,15 @@ a{
   }
 }
 
+@media (width < 992px){
+  .header__content-title{
+    margin:0px 0 41px 0;
+  }
+  .header__menu-container{
+    width:min(100% - 20px, 1300px);
+  }
+}
+
 @media (width < 768px){
   h1{
     font-size:1.875rem;

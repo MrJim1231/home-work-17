@@ -14,5 +14,8 @@
     @extend %container;
     display: flex;
     align-items: center;
+    @include lg {
+      width: min(100% - $gap, $container-size);
+    }
   }
 }
