@@ -2,9 +2,39 @@
 
 .about {
   background-color: $color-gray-light;
-}
-.about__container {
-  @extend %container;
-  min-height: 100vh;
-  display: flex;
+
+  &__container {
+    @extend %container;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__hero {
+    flex: 1;
+    max-width: 60%;
+
+    &-title {
+      margin-top: 100px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &-decrtiption {
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
