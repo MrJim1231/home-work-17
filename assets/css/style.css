@@ -557,7 +557,7 @@ a{
   -webkit-box-flex:1;
       -ms-flex:1;
           flex:1;
-  max-width:60%;
+  max-width:80%;
 }
 .about__hero-title{
   margin-top:100px;
@@ -565,9 +565,16 @@ a{
 .about__hero-title .about__hero-subtitle{
   display:block;
 }
+.about__hero .about__hero-list{
+  margin-top:54px;
+}
 .about__hero-decrtiption{
-  margin-top:1rem;
-  line-height:1.6;
+  font-family:Roboto;
+  font-weight:400;
+  font-style:Regular;
+  font-size:18px;
+  line-height:24px;
+  letter-spacing:0.1em;
 }
 .about__image img{
   max-width:100%;
