@@ -18,6 +18,11 @@
       margin-top: 100px;
       font-size: 2rem;
       font-weight: bold;
+
+      // Добавляем стиль для подзаголовка
+      .about__hero-subtitle {
+        display: block;
+      }
     }
 
     &-decrtiption {
@@ -35,6 +40,7 @@
     img {
       max-width: 100%;
       height: auto;
+      margin-top: 100px;
     }
   }
 }

@@ -560,6 +560,9 @@ a{
   font-size:2rem;
   font-weight:bold;
 }
+.about__hero-title .about__hero-subtitle{
+  display:block;
+}
 .about__hero-decrtiption{
   margin-top:1rem;
   line-height:1.6;
@@ -581,6 +584,7 @@ a{
 .about__image img{
   max-width:100%;
   height:auto;
+  margin-top:100px;
 }
 @media (576px <= width < 768px){
   .skills__container{
