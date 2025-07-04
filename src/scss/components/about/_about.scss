@@ -1,1 +1,10 @@
 @use "../../abstracts" as *;
+
+.about {
+  background-color: $color-gray-light;
+}
+.about__container {
+  @extend %container;
+  min-height: 100vh;
+  display: flex;
+}

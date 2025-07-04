@@ -151,7 +151,7 @@ template{
 [hidden]{
   display:none;
 }
-.header__menu-container, .header__content-container{
+.about__container, .header__menu-container, .header__content-container{
   width:min(100% - 40px, 1300px);
   margin-inline:auto;
 }
@@ -535,6 +535,17 @@ a{
 
 .skills__item:nth-of-type(9){
   grid-area:a9;
+}
+
+.about{
+  background-color:#e5e5e5;
+}
+
+.about__container{
+  min-height:100vh;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
 }
 
 @media (576px <= width < 768px){
