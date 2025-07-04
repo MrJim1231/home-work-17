@@ -604,7 +604,7 @@ a{
 .about__image img{
   max-width:100%;
   height:auto;
-  margin-top:0;
+  margin-left:88px;
 }
 @media (576px <= width < 768px){
   .skills__container{
