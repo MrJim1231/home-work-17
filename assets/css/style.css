@@ -910,6 +910,12 @@ a{
   .about__hero-title{
     margin-bottom:36px;
   }
+  .about__hero-decrtiption:last-of-type{
+    display:none;
+  }
+  .about .about__hero-decrtiption--hide{
+    display:none;
+  }
 }
 @media (width < 768px){
   h1{

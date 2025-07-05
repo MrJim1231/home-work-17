@@ -47,6 +47,10 @@
       word-break: normal;
       overflow-wrap: normal;
 
+      @include lg {
+        // letter-spacing: 0.02em;
+      }
+
       // Ограничим только последний абзац
       &:last-of-type {
         display: -webkit-box;
@@ -54,7 +58,16 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+        @include lg {
+          display: none;
+        }
       }
+    }
+  }
+
+  .about__hero-decrtiption--hide {
+    @include lg {
+      display: none;
     }
   }
 
