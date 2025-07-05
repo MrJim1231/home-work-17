@@ -9,6 +9,9 @@
 
   &__container {
     @extend %container;
+    @include lg {
+      width: min(100% - 10px, 1300px);
+    }
   }
 }
 
