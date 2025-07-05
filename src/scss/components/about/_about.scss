@@ -6,9 +6,16 @@
   box-sizing: border-box;
   padding-top: 100px;
 
+  @include lg {
+    padding-top: 85px;
+  }
+
   &__container {
     @extend %container;
     display: flex;
+    @include lg {
+      width: min(100% - $gap, $container-size);
+    }
   }
 
   &__hero {
@@ -17,6 +24,9 @@
     &-title {
       margin-top: 0;
       margin-bottom: 50px;
+      @include lg {
+        margin-bottom: 36px;
+      }
 
       .about__hero-subtitle {
         display: block;

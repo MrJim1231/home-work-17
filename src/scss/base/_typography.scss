@@ -51,10 +51,15 @@ h2 {
 
 h3 {
   font-family: $font-header;
-  font-size: 40px;
+  font-size: 2.5rem; //40px
   letter-spacing: 0.1em;
   line-height: 1.2;
   color: $color-primary;
+
+  @include lg {
+    font-size: 2rem; //32px
+    // color: red;
+  }
 }
 
 a {
