@@ -738,6 +738,38 @@ a{
 .posts__item:nth-child(6){
   grid-area:a6;
 }
+
+.footer{
+  background-color:#2d3651;
+  margin:0;
+  padding:0;
+}
+.footer__container{
+  text-align:center;
+  padding:40px 20px;
+}
+.footer__text{
+  margin:0;
+  padding:0;
+  font-family:Roboto;
+  font-weight:100;
+  font-style:Thin;
+  font-size:16px;
+  line-height:20px;
+  letter-spacing:0.1em;
+  text-align:center;
+  color:#637588;
+}
+.footer__text-span{
+  color:#ffffff;
+  font-family:Roboto;
+  font-weight:700;
+  font-style:Bold;
+  font-size:16px;
+  line-height:20px;
+  letter-spacing:0.1em;
+  text-align:center;
+}
 @media (576px <= width < 768px){
   .skills__container{
     grid-template-areas:"a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";

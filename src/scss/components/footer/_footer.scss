@@ -1,1 +1,38 @@
 @use "../../abstracts" as *;
+
+.footer {
+  background-color: $color-primary;
+  margin: 0;
+  padding: 0;
+
+  &__container {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-weight: 100;
+    font-style: Thin;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    color: $color-gray;
+
+    &-span {
+      color: $color-white; // Предполагается, что ты определил $color-accent в abstracts
+      font-family: Roboto;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 16px;
+      // leading-trim: NONE;
+      line-height: 20px;
+      letter-spacing: 0.1em;
+      text-align: center;
+    }
+  }
+}
