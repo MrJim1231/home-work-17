@@ -1117,6 +1117,9 @@ a{
     grid-template-rows:repeat(6, auto);
     grid-template-areas:"a1" "a2" "a3" "a4" "a5" "a6";
   }
+  .posts__item-content .posts__item-title{
+    margin-top:50px;
+  }
 }
 @media (992px <= width) and (690px <= height){
   .skills__container{

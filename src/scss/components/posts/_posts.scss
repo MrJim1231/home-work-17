@@ -113,6 +113,10 @@
         line-height: 20px;
         letter-spacing: 0.05em;
         text-align: center;
+
+        @include sm {
+          margin-top: 50px;
+        }
       }
 
       .posts__item-description {
