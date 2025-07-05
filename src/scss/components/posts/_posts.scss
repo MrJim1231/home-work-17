@@ -6,4 +6,14 @@
   &__container {
     @extend %container;
   }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $gap-x2;
+  }
+
+  &__item {
+    background-color: $color-gray-light2;
+  }
 }

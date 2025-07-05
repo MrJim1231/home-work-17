@@ -648,14 +648,20 @@ a{
 .posts{
   background-color:#ffffff;
 }
-
+.posts__items{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:40px;
+}
+.posts__item{
+  background-color:#eeeeee;
+}
 @media (576px <= width < 768px){
   .skills__container{
     grid-template-areas:"a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
     grid-template-columns:repeat(2, 1fr);
   }
 }
-
 @media (576px <= width){
   .btn--primary{
     min-width:350px;
@@ -670,7 +676,6 @@ a{
     margin-bottom:30px;
   }
 }
-
 @media (768px <= width < 992px){
   h1{
     font-size:2.5rem;
@@ -685,7 +690,6 @@ a{
     grid-auto-rows:350.6666666667px;
   }
 }
-
 @media (768px <= width){
   .header__nav-btn{
     display:none;
@@ -712,7 +716,6 @@ a{
     font-size:1.25rem;
   }
 }
-
 @media (992px <= width){
   h1{
     font-size:3.75rem;
@@ -727,13 +730,11 @@ a{
     grid-template-columns:repeat(4, 1fr);
   }
 }
-
 @media (992px <= width) and (height < 690px){
   .skills__container{
     grid-auto-rows:216.6666666667px;
   }
 }
-
 @media (width < 992px){
   .header__content-title{
     margin:0px 0 41px 0;
@@ -742,7 +743,6 @@ a{
     width:min(100% - 20px, 1300px);
   }
 }
-
 @media (width < 768px){
   h1{
     font-size:1.875rem;
@@ -796,7 +796,6 @@ a{
     font-size:1.125rem;
   }
 }
-
 @media (width < 576px){
   h1 span{
     display:block;
@@ -816,7 +815,6 @@ a{
     grid-template-areas:"a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
   }
 }
-
 @media (992px <= width) and (690px <= height){
   .skills__container{
     grid-auto-rows:calc(33.33333vh - 13.3333333333px);
