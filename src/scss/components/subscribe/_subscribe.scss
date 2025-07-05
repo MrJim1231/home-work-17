@@ -1,7 +1,7 @@
 @use "../../abstracts" as *;
 
 .subscript {
-  background-color: #2d3551;
+  background-color: $color-primary;
   padding: 40px 20px;
   display: flex;
   justify-content: center;
@@ -11,38 +11,35 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  max-width: 800px;
+  // max-width: 1320px;
   width: 100%;
   justify-content: center;
 }
 
-.subscript__input {
-  background-color: #3c435d;
-  color: #fff;
-  border: none;
-  border-bottom: 2px solid #a6a6a6;
-  padding: 12px 15px;
-  min-width: 200px;
-  font-family: inherit;
-  font-size: 14px;
-}
-
-.subscript__input::placeholder {
-  color: #ccc;
-}
-
+.subscript__input,
 .subscript__button {
   background-color: #3c435d;
   color: #fff;
   border: none;
   border-bottom: 2px solid #a6a6a6;
-  padding: 12px 15px;
-  cursor: pointer;
-  min-width: 200px;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.5;
+  height: 60px; // ✅ высота по требованию
+  width: 420.5px; // ✅ ширина по требованию
+  box-sizing: border-box;
+  padding: 0 20px; // по горизонтали, чтобы текст не лип
 }
 
-.subscript__button:hover {
-  opacity: 0.9;
+.subscript__input::placeholder {
+  color: #ccc;
+  font-size: 15px;
+}
+
+.subscript__button {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
