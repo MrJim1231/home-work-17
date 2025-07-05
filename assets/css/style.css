@@ -916,6 +916,9 @@ a{
   .about .about__hero-decrtiption--hide{
     display:none;
   }
+  .about__image img{
+    margin-left:75px;
+  }
 }
 @media (width < 768px){
   h1{
