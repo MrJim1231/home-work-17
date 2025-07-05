@@ -8,6 +8,7 @@
 
   @include lg {
     padding-top: 85px;
+    min-height: 567px;
   }
 
   &__container {
@@ -77,6 +78,7 @@
       margin-top: 4px;
       @include lg {
         margin-left: 75px;
+        margin-top: -10px;
       }
     }
   }

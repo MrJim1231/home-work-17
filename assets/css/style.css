@@ -588,7 +588,6 @@ a{
 .subscript{
   background-color:#2d3651;
   padding:32px 20px;
-  margin-top:3;
 }
 .subscript__form{
   display:-webkit-box;
@@ -903,6 +902,7 @@ a{
   }
   .about{
     padding-top:85px;
+    min-height:567px;
   }
   .about__container{
     width:min(100% - 20px, 1300px);
@@ -918,6 +918,10 @@ a{
   }
   .about__image img{
     margin-left:75px;
+    margin-top:-10px;
+  }
+  .subscript{
+    padding:18px 15px;
   }
 }
 @media (width < 768px){
