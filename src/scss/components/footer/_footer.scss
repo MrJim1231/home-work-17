@@ -2,12 +2,13 @@
 
 .footer {
   background-color: $color-primary;
-  margin: 0;
+  margin-top: 110px;
+  // margin: 0;
   padding: 0;
 
   &__container {
     text-align: center;
-    padding: 40px 20px;
+    padding: 47px 20px;
   }
 
   &__icons {

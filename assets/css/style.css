@@ -741,12 +741,12 @@ a{
 
 .footer{
   background-color:#2d3651;
-  margin:0;
+  margin-top:110px;
   padding:0;
 }
 .footer__container{
   text-align:center;
-  padding:40px 20px;
+  padding:47px 20px;
 }
 .footer__icons{
   display:-webkit-box;
