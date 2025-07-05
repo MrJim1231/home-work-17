@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html{
   line-height:1.15;
@@ -653,7 +654,7 @@ a{
   grid-template-columns:repeat(4, 1fr);
   grid-template-rows:repeat(2, 550px);
   grid-template-areas:"a1 a1 a2 a3" "a4 a5 a6 a6";
-  gap:40px;
+  gap:20px;
 }
 .posts__item{
   background-color:#eeeeee;
@@ -694,6 +695,24 @@ a{
       -ms-flex-align:center;
           align-items:center;
   padding:20px;
+  text-align:center;
+}
+.posts__item-content .posts__item-title{
+  font-family:"Roboto Slab", serif;
+  font-weight:700;
+  font-style:normal;
+  font-size:18px;
+  line-height:20px;
+  letter-spacing:0.05em;
+  text-align:center;
+}
+.posts__item-content .posts__item-description{
+  font-family:"Roboto", sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:16px;
+  line-height:20px;
+  letter-spacing:0;
   text-align:center;
 }
 .posts__item:nth-child(1){

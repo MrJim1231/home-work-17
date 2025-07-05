@@ -14,7 +14,7 @@
     grid-template-areas:
       "a1 a1 a2 a3"
       "a4 a5 a6 a6";
-    gap: $gap-x2;
+    gap: $gap;
   }
 
   &__item {
@@ -42,6 +42,30 @@
       align-items: center;
       padding: $gap;
       text-align: center;
+
+      // Заголовок (h4)
+      .posts__item-title {
+        font-family: "Roboto Slab", serif;
+        font-weight: 700;
+        font-style: normal; // для Bold стиль — normal, Bold задаётся font-weight
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.05em; // 5% = 0.05em
+        text-align: center;
+        /* leading-trim не поддерживается в CSS */
+      }
+
+      // Описание (p)
+      .posts__item-description {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0;
+        text-align: center;
+        /* leading-trim не поддерживается в CSS */
+      }
     }
 
     &:nth-child(1) {
