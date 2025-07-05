@@ -3,18 +3,22 @@
 .header__menu {
   position: relative;
   z-index: 2;
+
   padding: $gap 0;
 
   @include md {
     padding: $gap-sm 0;
+
     background-color: rgba($color-gray-dark, 0.25);
+
     @include box-shadow;
   }
 
   &-container {
-    @extend %container;
     display: flex;
     align-items: center;
+
+    @extend %container;
     @include lg {
       width: min(100% - $gap, $container-size);
     }

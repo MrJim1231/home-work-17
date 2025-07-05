@@ -7,70 +7,60 @@ $local-height: 690px;
   @include sm-min {
     padding: $gap-sm;
   }
-
   @include sm {
     padding: $gap;
   }
 
   &__container {
     display: grid;
+
     margin-bottom: $gap;
 
     @include lg-min {
-      grid-template-areas:
-        "a1 a1 a2 a3"
-        "a4 a5 a5 a6"
-        "a7 a8 a9 a6";
+      grid-template-areas: "a1 a1 a2 a3"
+      "a4 a5 a5 a6"
+      "a7 a8 a9 a6";
       grid-template-columns: repeat(4, 1fr);
     }
-
     @include lg-md {
-      grid-template-areas:
-        "a1 a1 a2"
-        "a3 a4 a4"
-        "a5 a5 a6"
-        "a7 a8 a6"
-        "a7 a9 a9";
-      grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: calc(364px - $local-gap);
+      grid-template-areas: "a1 a1 a2"
+      "a3 a4 a4"
+      "a5 a5 a6"
+      "a7 a8 a6"
+      "a7 a9 a9";
+      grid-template-columns: repeat(3, 1fr);
     }
-
     @include md {
       grid-auto-rows: calc(364px - $local-gap);
     }
-
     @include md-sm {
-      grid-template-areas:
-        "a1 a2"
-        "a3 a2"
-        "a4 a4"
-        "a5 a6"
-        "a5 a7"
-        "a8 a9";
+      grid-template-areas: "a1 a2"
+      "a3 a2"
+      "a4 a4"
+      "a5 a6"
+      "a5 a7"
+      "a8 a9";
       grid-template-columns: repeat(2, 1fr);
     }
-
     @include sm-min {
       gap: $gap-sm;
     }
-
     @include sm {
       gap: $gap;
       // Обновлено: минимально 350px
+
       grid-auto-rows: max(350px, calc(363px - $local-gap));
-
-      grid-template-areas:
-        "a1"
-        "a2"
-        "a3"
-        "a4"
-        "a5"
-        "a6"
-        "a7"
-        "a8"
-        "a9";
+      grid-template-areas: "a1"
+      "a2"
+      "a3"
+      "a4"
+      "a5"
+      "a6"
+      "a7"
+      "a8"
+      "a9";
     }
-
     // ⚠️ ВАЖНО: применяем vh-тест только на ширине ≥992px
     @include lg-min {
       @media ($local-height <= height) {

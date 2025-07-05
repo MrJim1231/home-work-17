@@ -1,24 +1,25 @@
 @use "../../abstracts" as *;
 
 .about {
-  background-color: $color-gray-light;
-  min-height: 652px;
   box-sizing: border-box;
+  min-height: 652px;
   padding-top: 100px;
 
-  @include lg {
-    padding-top: 85px;
-    min-height: 567px;
-  }
+  background-color: $color-gray-light;
 
+  @include lg {
+    min-height: 567px;
+    padding-top: 85px;
+  }
   @include md {
-    padding-top: 66px;
     min-height: 518px;
+    padding-top: 66px;
   }
 
   &__container {
-    @extend %container;
     display: flex;
+
+    @extend %container;
     @include lg {
       width: min(100% - $gap, $container-size);
     }
@@ -34,6 +35,7 @@
     &-title {
       margin-top: 0;
       margin-bottom: 50px;
+
       @include lg {
         margin-bottom: 36px;
       }
@@ -50,31 +52,35 @@
     }
 
     &-decrtiption {
-      font-family: Roboto;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 24px;
       letter-spacing: 0.05em;
       // Убираем переносы слов
       word-break: normal;
-      overflow-wrap: normal;
+
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
 
       @include md {
+        letter-spacing: 0.02em;
+
         font-size: 16px;
         line-height: 24px;
-        letter-spacing: 0.02em;
       }
+      overflow-wrap: normal;
 
       // Ограничим только последний абзац
       &:last-of-type {
         display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
         overflow: hidden;
+        -webkit-box-orient: vertical;
+
         text-overflow: ellipsis;
+
         @include lg {
           display: none;
         }
+        -webkit-line-clamp: 2;
       }
     }
   }
@@ -97,22 +103,23 @@
     @include sm {
       display: flex;
       justify-content: center;
+
       margin-top: 100px;
     }
     img {
-      margin-left: 88px;
       margin-top: 4px;
+      margin-left: 88px;
 
       @include lg {
-        margin-left: 75px;
         margin-top: -10px;
+        margin-left: 75px;
       }
-
       @include md {
-        transform: scale(0.8);
-        transform-origin: center;
         margin-top: -40px;
         margin-left: 20px;
+
+        transform: scale(0.8);
+        transform-origin: center;
       }
       @include sm {
         transform: none;
