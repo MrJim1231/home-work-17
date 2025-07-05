@@ -1094,6 +1094,15 @@ a{
     -webkit-box-pack:center;
         -ms-flex-pack:center;
             justify-content:center;
+    margin-top:100px;
+  }
+  .about__image img{
+    -webkit-transform:none;
+        -ms-transform:none;
+            transform:none;
+  }
+  .subscript{
+    margin-top:67px;
   }
   .subscript__form{
     grid-template-columns:1fr;
