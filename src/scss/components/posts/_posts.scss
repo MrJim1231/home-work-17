@@ -7,6 +7,11 @@
     @extend %container;
   }
 
+  &__title {
+    margin-top: 108px;
+    margin-bottom: 56px;
+  }
+
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -15,6 +20,7 @@
       "a1 a1 a2 a3"
       "a4 a5 a6 a6";
     gap: $gap;
+    padding-bottom: 15px;
   }
 
   &__item {

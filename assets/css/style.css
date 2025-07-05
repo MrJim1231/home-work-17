@@ -649,12 +649,17 @@ a{
 .posts{
   background-color:#ffffff;
 }
+.posts__title{
+  margin-top:108px;
+  margin-bottom:56px;
+}
 .posts__items{
   display:grid;
   grid-template-columns:repeat(4, 1fr);
   grid-template-rows:repeat(2, 550px);
   grid-template-areas:"a1 a1 a2 a3" "a4 a5 a6 a6";
   gap:20px;
+  padding-bottom:15px;
 }
 .posts__item{
   background-color:#eeeeee;
