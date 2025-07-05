@@ -22,6 +22,10 @@
     @include lg {
       width: min(100% - $gap, $container-size);
     }
+    @include sm {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__hero {
@@ -35,6 +39,9 @@
       }
       @include md {
         margin-bottom: 30px;
+      }
+      @include sm {
+        text-align: center;
       }
 
       .about__hero-subtitle {
@@ -80,6 +87,9 @@
     @include md {
       display: none;
     }
+    @include sm {
+      display: block;
+    }
   }
   .about__hero-decrtiption--hide {
     @include lg {
@@ -88,6 +98,10 @@
   }
 
   &__image {
+    @include sm {
+      display: flex;
+      justify-content: center;
+    }
     img {
       margin-left: 88px;
       margin-top: 4px;

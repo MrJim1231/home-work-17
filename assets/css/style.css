@@ -1072,6 +1072,29 @@ a{
     grid-auto-rows:350px;
     grid-template-areas:"a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
   }
+  .about__container{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+  }
+  .about__hero-title{
+    text-align:center;
+  }
+  .about .about__hero-decrtiption--post3{
+    display:block;
+  }
+  .about__image{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+  }
   .subscript__form{
     grid-template-columns:1fr;
     grid-template-areas:"a1" "a2" "a3";
