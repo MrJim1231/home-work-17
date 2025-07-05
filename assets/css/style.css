@@ -1108,6 +1108,10 @@ a{
     grid-template-columns:1fr;
     grid-template-areas:"a1" "a2" "a3";
   }
+  .posts__title{
+    text-align:center;
+    margin-bottom:35px;
+  }
   .posts__items{
     grid-template-columns:1fr;
     grid-template-rows:repeat(6, auto);
