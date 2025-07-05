@@ -2,26 +2,16 @@
 
 .about {
   background-color: $color-gray-light;
-  min-height: 652px; // минимальная фиксированная высота
+  min-height: 652px;
   box-sizing: border-box;
   padding-top: 100px;
-  // display: flex;
-  // flex-direction: column;
 
   &__container {
     @extend %container;
     display: flex;
-
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-    // gap: 1rem;
-    // margin-top: 100px;
   }
 
   &__hero {
-    // flex: 1.8;
-    // max-width: 100%;
     max-width: 936px;
 
     &-title {
@@ -43,20 +33,25 @@
       font-size: 18px;
       line-height: 24px;
       letter-spacing: 0.05em;
-      word-break: break-word;
+      // Убираем переносы слов
+      word-break: normal;
+      overflow-wrap: normal;
+
+      // Ограничим только последний абзац
+      &:last-of-type {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
   }
 
   &__image {
-    // flex: 0.7;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-
     img {
-      // max-width: 100%;
-      // height: auto;
       margin-left: 88px;
+      margin-top: 4px;
     }
   }
 }

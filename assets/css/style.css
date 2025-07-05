@@ -569,10 +569,19 @@ a{
   font-size:18px;
   line-height:24px;
   letter-spacing:0.05em;
-  word-break:break-word;
+  word-break:normal;
+  overflow-wrap:normal;
+}
+.about__hero-decrtiption:last-of-type{
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 .about__image img{
   margin-left:88px;
+  margin-top:4px;
 }
 
 .subscript{
