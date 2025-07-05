@@ -59,6 +59,19 @@
         "a3 a4"
         "a5 a6";
     }
+
+    // ✅ sm: Один элемент в строке
+    @include sm {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, auto);
+      grid-template-areas:
+        "a1"
+        "a2"
+        "a3"
+        "a4"
+        "a5"
+        "a6";
+    }
   }
 
   &__item {
