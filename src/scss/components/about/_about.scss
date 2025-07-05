@@ -2,23 +2,30 @@
 
 .about {
   background-color: $color-gray-light;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  // padding-top: 100px;
+  // padding-bottom: 100px;
+  min-height: 652px; // минимальная фиксированная высота
 
-  min-height: 100vh;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 
   &__container {
     @extend %container;
+
     display: flex;
     justify-content: space-between;
-    align-items: center; // ⬅️ чтобы выровнять текст и картинку по вертикали
-    gap: 1rem; // ⬅️ меньше отступ между колонками
-    flex-grow: 1;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 100px;
+
+    // Высота контейнера: 100vh минус паддинги, чтобы паддинги не входили в расчет
+    // min-height: calc(100vh - 200px);
+    // flex-grow: 1;
   }
 
   &__hero {
-    flex: 1.8; // ⬅️ больше ширины для текста
+    flex: 1.8;
     max-width: 100%;
 
     &-title {
@@ -39,15 +46,12 @@
       font-size: 18px;
       line-height: 24px;
       letter-spacing: 0.05em;
-
-      // ❌ удаляем ограничение по ширине
-      // max-width: 720px;
       word-break: break-word;
     }
   }
 
   &__image {
-    flex: 0.7; // ⬅️ сжимаем колонку с изображением
+    flex: 0.7;
     display: flex;
     justify-content: center;
     align-items: center;
