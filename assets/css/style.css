@@ -1026,6 +1026,10 @@ a{
     margin-top:-40px;
     margin-left:20px;
   }
+  .subscript{
+    min-height:182px;
+    margin-top:-32px;
+  }
   .subscript__form{
     grid-template-columns:repeat(2, 1fr);
     grid-template-areas:"a1 a1" "a2 a3";

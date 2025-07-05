@@ -8,6 +8,11 @@
     padding: 18px 15px;
   }
 
+  @include md {
+    min-height: 182px;
+    margin-top: -32px;
+  }
+
   &__container {
     @extend %container;
 
