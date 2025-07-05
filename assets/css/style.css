@@ -1047,6 +1047,12 @@ a{
     grid-template-rows:repeat(3, 550px);
     grid-template-areas:"a1 a2" "a3 a4" "a5 a6";
   }
+  .footer{
+    margin-top:60px;
+  }
+  .footer__container{
+    padding:62px 20px;
+  }
 }
 @media (width < 576px){
   h1 span{
