@@ -927,6 +927,13 @@ a{
   .subscript__container{
     width:min(100% - 10px, 1300px);
   }
+  .posts__container{
+    width:min(100% - 20px, 1300px);
+  }
+  .posts__title{
+    margin-top:80px;
+    margin-bottom:48px;
+  }
 }
 @media (width < 768px){
   h1{

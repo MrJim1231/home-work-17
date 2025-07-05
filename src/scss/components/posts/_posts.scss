@@ -5,11 +5,18 @@
 
   &__container {
     @extend %container;
+    @include lg {
+      width: min(100% - 20px, 1300px);
+    }
   }
 
   &__title {
     margin-top: 108px;
     margin-bottom: 56px;
+    @include lg {
+      margin-top: 80px;
+      margin-bottom: 48px;
+    }
   }
 
   &__items {
