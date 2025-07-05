@@ -30,11 +30,9 @@
     gap: 20px;
     width: 100%;
 
-    // По умолчанию: "a1 a2 a3"
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "a1 a2 a3";
 
-    // Для md: "a1 a1" / "a2 a3"
     @include md {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
@@ -42,7 +40,6 @@
         "a2 a3";
     }
 
-    // ✅ Для sm: "a1" / "a2" / "a3"
     @include sm {
       grid-template-columns: 1fr;
       grid-template-areas:
@@ -51,7 +48,6 @@
         "a3";
     }
 
-    // Назначаем области для элементов
     .subscript__input:first-child {
       grid-area: a1;
     }

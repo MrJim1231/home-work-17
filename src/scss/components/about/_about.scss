@@ -49,10 +49,6 @@
       }
     }
 
-    .about__hero-list {
-      // margin-top: 54px;
-    }
-
     &-decrtiption {
       font-family: Roboto;
       font-weight: 400;
@@ -119,7 +115,7 @@
         margin-left: 20px;
       }
       @include sm {
-        transform: none; // полностью сбросит transform
+        transform: none;
       }
     }
   }
