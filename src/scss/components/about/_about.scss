@@ -11,6 +11,10 @@
     min-height: 567px;
   }
 
+  @include md {
+    padding-top: 66px;
+  }
+
   &__container {
     @extend %container;
     display: flex;
@@ -66,6 +70,11 @@
     }
   }
 
+  .about__hero-decrtiption--post2 {
+    @include md {
+      display: none;
+    }
+  }
   .about__hero-decrtiption--hide {
     @include lg {
       display: none;
@@ -76,9 +85,16 @@
     img {
       margin-left: 88px;
       margin-top: 4px;
+
       @include lg {
         margin-left: 75px;
         margin-top: -10px;
+      }
+
+      @include md {
+        transform: scale(0.8);
+        transform-origin: center;
+        margin-top: -40px;
       }
     }
   }

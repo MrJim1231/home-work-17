@@ -950,6 +950,9 @@ a{
   h1{
     font-size:1.875rem;
   }
+  h3{
+    font-size:1.5rem;
+  }
   .btn--light{
     min-width:170px;
     min-height:40px;
@@ -997,6 +1000,21 @@ a{
   }
   .skills__item-title{
     font-size:1.125rem;
+  }
+  .about{
+    padding-top:66px;
+  }
+  .about .about__hero-decrtiption--post2{
+    display:none;
+  }
+  .about__image img{
+    -webkit-transform:scale(0.8);
+        -ms-transform:scale(0.8);
+            transform:scale(0.8);
+    -webkit-transform-origin:center;
+        -ms-transform-origin:center;
+            transform-origin:center;
+    margin-top:-40px;
   }
 }
 @media (width < 576px){
