@@ -3,48 +3,75 @@
 .subscript {
   background-color: $color-primary;
   padding: 32px 20px;
+
   @include lg {
     padding: 18px 15px;
   }
 
   &__container {
     @extend %container;
+
     @include lg {
       width: min(100% - 10px, 1300px);
     }
   }
-}
 
-.subscript__form {
-  display: flex;
-  gap: 20px;
-  width: 100%;
-}
+  &__form {
+    display: grid;
+    gap: 20px;
+    width: 100%;
 
-.subscript__input,
-.subscript__button {
-  background-color: #3c435d;
-  color: #fff;
-  border: none;
-  border-bottom: 2px solid #a6a6a6;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.5;
-  height: 60px; // ✅ высота по требованию
-  width: 420.5px; // ✅ ширина по требованию
-  box-sizing: border-box;
-  padding: 0 20px; // по горизонтали, чтобы текст не лип
-}
+    // По умолчанию: "a1 a2 a3"
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a1 a2 a3";
 
-.subscript__input::placeholder {
-  color: #ccc;
-  font-size: 15px;
-}
+    // Для md и меньше: "a1 a1" "a2 a3"
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "a1 a1"
+        "a2 a3";
+    }
 
-.subscript__button {
-  cursor: pointer;
+    // Назначаем области для элементов
+    .subscript__input:first-child {
+      grid-area: a1;
+    }
 
-  &:hover {
-    opacity: 0.9;
+    .subscript__input:nth-child(2) {
+      grid-area: a2;
+    }
+
+    .subscript__button {
+      grid-area: a3;
+    }
+  }
+
+  &__input,
+  &__button {
+    background-color: #3c435d;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #a6a6a6;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  &__input::placeholder {
+    color: #ccc;
+    font-size: 15px;
+  }
+
+  &__button {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
   }
 }
