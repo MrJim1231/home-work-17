@@ -2,18 +2,18 @@
 
 .subscript {
   background-color: $color-primary;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
+  padding: 32px 20px;
+  margin-top: 3;
+
+  &__container {
+    @extend %container;
+  }
 }
 
 .subscript__form {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
-  // max-width: 1320px;
   width: 100%;
-  justify-content: center;
 }
 
 .subscript__input,
