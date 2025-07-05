@@ -1,1 +1,9 @@
 @use "../../abstracts" as *;
+
+.posts {
+  background-color: $color-white;
+
+  &__container {
+    @extend %container;
+  }
+}
