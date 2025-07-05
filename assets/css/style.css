@@ -778,6 +778,14 @@ a{
       -ms-transform:scale(1.2);
           transform:scale(1.2);
 }
+.footer__line{
+  width:75px;
+  height:0;
+  margin:0 auto;
+  border:2px solid #ffffff;
+  opacity:1;
+  margin-bottom:30px;
+}
 .footer__text{
   margin:0;
   padding:0;
