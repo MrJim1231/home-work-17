@@ -1003,8 +1003,17 @@ a{
   }
   .about{
     padding-top:66px;
+    min-height:518px;
   }
-  .about .about__hero-decrtiption--post2{
+  .about__hero-title{
+    margin-bottom:30px;
+  }
+  .about__hero-decrtiption{
+    font-size:16px;
+    line-height:24px;
+    letter-spacing:0.02em;
+  }
+  .about .about__hero-decrtiption--post3{
     display:none;
   }
   .about__image img{
@@ -1015,6 +1024,7 @@ a{
         -ms-transform-origin:center;
             transform-origin:center;
     margin-top:-40px;
+    margin-left:20px;
   }
 }
 @media (width < 576px){

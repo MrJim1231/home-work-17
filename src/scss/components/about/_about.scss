@@ -13,6 +13,7 @@
 
   @include md {
     padding-top: 66px;
+    min-height: 518px;
   }
 
   &__container {
@@ -31,6 +32,9 @@
       margin-bottom: 50px;
       @include lg {
         margin-bottom: 36px;
+      }
+      @include md {
+        margin-bottom: 30px;
       }
 
       .about__hero-subtitle {
@@ -52,8 +56,10 @@
       word-break: normal;
       overflow-wrap: normal;
 
-      @include lg {
-        // letter-spacing: 0.02em;
+      @include md {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
       }
 
       // Ограничим только последний абзац
@@ -70,7 +76,7 @@
     }
   }
 
-  .about__hero-decrtiption--post2 {
+  .about__hero-decrtiption--post3 {
     @include md {
       display: none;
     }
@@ -95,6 +101,7 @@
         transform: scale(0.8);
         transform-origin: center;
         margin-top: -40px;
+        margin-left: 20px;
       }
     }
   }
